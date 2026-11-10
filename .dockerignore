@@ -1,0 +1,22 @@
+.env
+.env.*
+!.env.dist
+.git
+.DS_Store
+__pycache__/
+.venv/
+*.pyc
+src/
+tests/
+minify.py
+check_widgets.py
+preview.png
+*.zip
+docs/
+README.md
+
+# Claude Code
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+.mcp.json

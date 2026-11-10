@@ -24,7 +24,7 @@ from pathlib import Path
 
 from aiogram import Bot, Dispatcher, Router
 from aiogram.filters import Command
-from aiogram.types import Message, WidgetQuery
+from aiogram.types import LinkPreviewOptions, Message, WidgetQuery
 
 from themes import pack
 
@@ -45,7 +45,8 @@ INTRO = (
     "◀ ▶ step sideways\n"
     "⟲ ⟳ turn\n"
     "FIRE shoot (hold for auto-fire)\n\n"
-    "Slide your finger from button to button, and use both thumbs at once.\n"
+    "Slide your finger from button to button, and use both thumbs at once.\n\n"
+    "Made by <b>Team Pixel</b> · <a href=\"https://github.com/TEAM-PIXEL-CAT/Doom-bot\">GitHub</a>\n\n"
     "Press <b>FIRE</b> to start 👇"
 )
 
@@ -54,7 +55,8 @@ router = Router()
 
 @router.message(Command("start", "doom"))
 async def doom(message: Message, bot: Bot) -> None:
-    await message.answer(INTRO, parse_mode="HTML")
+    # no link preview: it would put a GitHub card between the intro and the game
+    await message.answer(INTRO, parse_mode="HTML", link_preview_options=LinkPreviewOptions(is_disabled=True))
     # allow_queries: the widget may ask for the next level's pack
     await bot.send_widget(chat_id=message.chat.id, html=HTML, public_data=pack(1), allow_queries=True)
 

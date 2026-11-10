@@ -1,5 +1,7 @@
 # 🔥 TIPO DOOM
 
+<p align="center"><b>by Team Pixel</b> · <a href="https://github.com/TEAM-PIXEL-CAT/Doom-bot">github.com/TEAM-PIXEL-CAT/Doom-bot</a></p>
+
 A first-person shooter that lives right inside a Telegram message. It's an HTML widget (Bot API 10.4): a canvas raycaster, pixel-art monsters and random mazes. The world changes with every level, from the catacombs to a tech base to hell, then round again, harder each time.
 
 <p align="center">
@@ -114,3 +116,7 @@ Add a dictionary to `THEMES` in `themes.py`. The widget code doesn't need any ch
 **Gestures:** a vertical drag is always taken over by chat scrolling.
 
 Spec: [TelegramMessenger/widget-sandbox](https://github.com/TelegramMessenger/widget-sandbox) (`docs/sdk-v1.md`, `docs/profile-v1.md`).
+
+---
+
+<p align="center">Made with 🔥 by <b>Team Pixel</b> · <a href="https://github.com/TEAM-PIXEL-CAT/Doom-bot">GitHub</a></p>
