@@ -1,0 +1,3 @@
+# Only for development: rebuilding the widget and the tests. The bot doesn't need these.
+-r requirements.txt
+playwright
